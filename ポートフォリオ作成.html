@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>あなたの名前 - ポートフォリオ</title>
+    <!-- Tailwind CSSを読み込み -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts (Inter) を読み込み -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* 日本語はNoto Sans JP、英数字はInterを適用 */
+        body {
+            font-family: 'Inter', 'Noto Sans JP', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800">
+
+    <!-- ヘッダー -->
+    <header class="bg-white shadow-md sticky top-0 z-10">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-slate-900">
+                <a href="#">あなたの名前</a>
+            </div>
+            <ul class="flex space-x-6">
+                <li><a href="#about" class="hover:text-sky-600 transition-colors">自己紹介</a></li>
+                <li><a href="#skills" class="hover:text-sky-600 transition-colors">スキル</a></li>
+                <li><a href="#works" class="hover:text-sky-600 transition-colors">実績</a></li>
+                <li><a href="#contact" class="hover:text-sky-600 transition-colors">連絡先</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main class="container mx-auto px-6 py-12">
+
+        <!-- ヒーローセクション -->
+        <section class="text-center py-20">
+            <h1 class="text-5xl font-bold text-slate-900 mb-4">ここにキャッチコピーを入れます</h1>
+            <p class="text-xl text-slate-600">例：デザインと技術で課題を解決するフロントエンドエンジニア</p>
+        </section>
+
+        <!-- 自己紹介 (About Me) -->
+        <section id="about" class="py-16 bg-white rounded-xl shadow-lg p-10 mb-20">
+            <h2 class="text-4xl font-bold text-center mb-10">自己紹介</h2>
+            <div class="flex flex-col md:flex-row items-center gap-10">
+                <div class="md:w-1/3 text-center">
+                    <img src="https://placehold.co/250x250/E2E8F0/475569?text=ここに写真" alt="あなたの顔写真" class="rounded-full mx-auto w-48 h-48 md:w-64 md:h-64 object-cover shadow-md">
+                </div>
+                <div class="md:w-2/3">
+                    <h3 class="text-2xl font-bold mb-3">Taro Yamada (山田 太郎)</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        ここに自己紹介文を記述します。これまでの経歴、得意なこと、仕事に対する情熱などを自由に表現してください。
+                        <br><br>
+                        例えば、どのような技術に興味があり、今後どのようなことに挑戦していきたいかなどを書くと、あなたの人柄が伝わりやすくなります。箇条書きを使っても分かりやすいです。
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- スキル (Skills) -->
+        <section id="skills" class="py-16">
+            <h2 class="text-4xl font-bold text-center mb-12">スキル</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <!-- スキル1 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <h3 class="text-xl font-bold mb-2">HTML & CSS</h3>
+                    <p class="text-slate-600">セマンティックなマークアップとレスポンシブデザインが得意です。</p>
+                </div>
+                <!-- スキル2 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <h3 class="text-xl font-bold mb-2">JavaScript</h3>
+                    <p class="text-slate-600">ReactやVue.jsを使った開発経験があります。</p>
+                </div>
+                <!-- スキル3 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <h3 class="text-xl font-bold mb-2">デザインツール</h3>
+                    <p class="text-slate-600">Figma, Adobe XDを使ったUIデザインが可能です。</p>
+                </div>
+                <!-- スキル4 -->
+                <div class="bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow">
+                    <h3 class="text-xl font-bold mb-2">その他</h3>
+                    <p class="text-slate-600">Gitによるバージョン管理、基本的なサーバー知識など。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 実績 (Works) -->
+        <section id="works" class="py-16">
+            <h2 class="text-4xl font-bold text-center mb-12">実績・制作物</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- 実績1 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform">
+                    <img src="https://placehold.co/600x400/94A3B8/FFFFFF?text=作品1" alt="作品1の画像" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">作品名 1</h3>
+                        <p class="text-slate-600 mb-4">この作品の簡単な説明をここに書きます。</p>
+                        <p class="text-sm mb-4"><strong class="font-bold">使用技術:</strong> HTML, CSS, JavaScript</p>
+                        <a href="#" class="text-sky-600 font-bold hover:underline">詳細を見る &rarr;</a>
+                    </div>
+                </div>
+                <!-- 実績2 -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform">
+                    <img src="https://placehold.co/600x400/64748B/FFFFFF?text=作品2" alt="作品2の画像" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">作品名 2</h3>
+                        <p class="text-slate-600 mb-4">チームで開発したプロジェクトの概要です。</p>
+                         <p class="text-sm mb-4"><strong class="font-bold">使用技術:</strong> React, Firebase</p>
+                        <a href="#" class="text-sky-600 font-bold hover:underline">詳細を見る &rarr;</a>
+                    </div>
+                </div>
+                <!-- 実績3（必要に応じて追加） -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform">
+                    <img src="https://placehold.co/600x400/475569/FFFFFF?text=作品3" alt="作品3の画像" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold mb-2">作品名 3</h3>
+                        <p class="text-slate-600 mb-4">デザインから実装まで担当したサイトです。</p>
+                        <p class="text-sm mb-4"><strong class="font-bold">使用技術:</strong> Figma, HTML, CSS</p>
+                        <a href="#" class="text-sky-600 font-bold hover:underline">詳細を見る &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 連絡先 (Contact) -->
+        <section id="contact" class="py-20 bg-slate-800 text-white text-center rounded-xl">
+            <h2 class="text-4xl font-bold mb-4">お問い合わせ</h2>
+            <p class="mb-8 max-w-2xl mx-auto">ご興味を持っていただけましたら、ぜひお気軽にご連絡ください。</p>
+            <a href="mailto:your-email@example.com" class="bg-sky-500 hover:bg-sky-600 text-white font-bold py-3 px-8 rounded-full transition-colors text-lg">
+                メールを送る
+            </a>
+             <!-- SNSリンク -->
+            <div class="mt-8 flex justify-center space-x-6">
+                <a href="#" target="_blank" class="hover:opacity-80 transition-opacity">GitHub</a>
+                <a href="#" target="_blank" class="hover:opacity-80 transition-opacity">X (Twitter)</a>
+                <a href="#" target="_blank" class="hover:opacity-80 transition-opacity">LinkedIn</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- フッター -->
+    <footer class="text-center py-6 bg-slate-100">
+        <p class="text-slate-500">&copy; 2025 あなたの名前. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
